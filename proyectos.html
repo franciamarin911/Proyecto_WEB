@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos 3D - MEGA CONSTRUCCIONES</title>
+  <meta name="description"
+    content="Portafolio de proyectos 3D de MEGA CONSTRUCCIONES: renders, recorridos virtuales y maquetas digitales de proyectos residenciales, comerciales y remodelaciones." />
+  <link rel="stylesheet" href="Proyecto.css" />
+  <!-- FAVICONS DE MEGACONSTRUCCIONES-->
+  <link rel="apple-touch-icon" sizes="180x180" href="imagenes_proyecto/FAVICON_IMAGENES/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="imagenes_proyecto/FAVICON_IMAGENES/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="imagenes_proyecto/FAVICON_IMAGENES/favicon-16x16.png" />
+  <link rel="icon" href="imagenes_proyecto/FAVICON_IMAGENES/favicon.ico" />
+</head>
+
+<body>
+  <!-- ENCABEZADO DEL SITIO -->
+  <header class="header" role="banner">
+    <img src="imagenes_proyecto/logo_MEGACONSTRUCCIONES.png" alt="Logotipo de MEGA CONSTRUCCIONES" width="180"
+      height="auto" />
+    <ul>
+      <li type="none">
+        <h1>MEGA CONSTRUCCIONES</h1>
+      </li>
+      <li type="none">
+        <p>Construyendo futuro con calidad y confianza</p>
+      </li>
+    </ul>
+  </header>
+
+  <!-- MENÚ DE NAVEGACIÓN PRINCIPAL -->
+  <nav class="menu-navegacion" aria-label="Navegación principal">
+    <nav class="menu-navegacion"><button class="menu-toggle" type="button" aria-label="Abrir menú"
+        aria-expanded="false">
+        <span class="menu-toggle-bar"></span>
+      </button>
+      <ul class="lista-menu">
+        <li type="none"><a href="ProyectoFinal.html#inicio">INICIO</a></li>
+        <li type="none"><a href="ProyectoFinal.html#nosotros">NOSOTROS</a></li>
+        <li type="none">
+          <a href="proyectos.html" aria-current="page">PROYECTOS</a>
+        </li>
+        <li type="none"><a href="servicios.html">SERVICIOS</a></li>
+        <li type="none"><a href="contacto.html">CONTACTO</a></li>
+        <li type="none">
+          <a href="ProyectoFinal.html#elegirnos">¿POR QUÉ ELEGIRNOS?</a>
+        </li>
+        <li type="none"><a href="ProyectoFinal.html#galeria">GALERÍA</a></li>
+      </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL DE PROYECTOS -->
+    <main id="contenido-principal-proyectos">
+      <!-- INTRODUCCIÓN A PROYECTOS -->
+      <section id="introduccion-proyectos" class="seccion-introduccion-proyectos">
+        <header class="encabezado-proyectos">
+          <h2>Proyectos 3D y Recorridos Virtuales</h2>
+          <p>
+            En MEGA CONSTRUCCIONES utilizamos modelado 3D y recorridos virtuales
+            para que nuestros clientes visualicen sus proyectos antes de
+            construirlos. Aquí encontrarás una selección de proyectos
+            residenciales, comerciales y remodelaciones.
+          </p>
+        </header>
+
+        <!-- FILTROS BÁSICOS (para usar con JS si luego quieres) -->
+        <section id="filtros-proyectos" class="filtros-proyectos" aria-label="Filtrar proyectos 3D">
+          <h3>Filtrar por tipo de proyecto</h3>
+          <div class="contenedor-botones-filtros">
+            <button type="button" class="boton-filtro-proyecto" data-tipo="todos">
+              Todos
+            </button>
+            <button type="button" class="boton-filtro-proyecto" data-tipo="residencial">
+              Residenciales
+            </button>
+            <button type="button" class="boton-filtro-proyecto" data-tipo="comercial">
+              Comerciales
+            </button>
+          </div>
+        </section>
+      </section>
+
+      <!-- LISTADO DE PROYECTOS 3D -->
+      <section id="listado-proyectos-3d" class="listado-proyectos-3d" aria-label="Listado de proyectos 3D">
+        <!-- RESIDENCIALESSSS -->
+        <!-- PROYECTO 1 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Auquisamaña - La Paz</h3>
+            <p class="resumen-proyecto-3d">
+              Edificio familiar ubicado en la zona sur de La Paz, diseñado con
+              espacios luminosos, terrazas y áreas comunes.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <!-- Usa preload="metadata" para que no cargue el video completo al inicio -->
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL1.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/RESIDENCIAL1.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Recorrido virtual 3D del edificio residencial en Auquisamaña,
+              mostrando interiores, exteriores y vistas 360°.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto Auquisamaña">
+            <ul class="lista-datos-proyecto">
+              <li>
+                <strong>Ubicación:</strong> Auquisamaña, Zona Sur - La Paz
+              </li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li>
+                <strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- PROYECTO 2 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Zona sur - La Paz</h3>
+            <p class="resumen-proyecto-3d">Un edificio residencial elegante en la zona sur combina diseño moderno,
+              confort
+              y una ubicación exclusiva y tranquila.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL2.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Recorrido virtual 3D del edificio residencial en Calacoto,
+              mostrando interiores, exteriores y vistas 360°.</figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Calacoto, Zona Sur - La Paz</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar </li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- PROYECTO 3 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Sopocachi - La Paz</h3>
+            <p class="resumen-proyecto-3d">Un edificio elegante y moderno combina arquitectura contemporánea, interiores
+              bien diseñados y comodidades de lujo.
+            </p>
+          </header>
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL3.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Edificio residencial en Sopocachi - La Paz.</figcaption>
+          </figure>
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Plaza España, Sopocachi - La Paz </li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- Proyecto 4 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Achumani - La Paz</h3>
+            <p class="resumen-proyecto-3d">Un edificio elegante y moderno, ofrece diseño contemporáneo, ambientes
+              amplios
+              y excelentes vistas, combinando estilo y comodidad.</p>
+          </header>
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL4.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Texto explicando lo que se ve en el video.</figcaption>
+          </figure>
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Achumani, Zona Sur - La Paz</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- proyecto 5 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Villa Adela - El Alto</h3>
+            <p class="resumen-proyecto-3d">Un edificio elegante y moderno, combina líneas arquitectónicas
+              contemporáneas,
+              interiores funcionales y buena iluminación, ofreciendo confort y estilo.</p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL5.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Edificio residencial en Villa Adela</figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Villa Adela, Calle Julio. I - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- proyecto 6 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Familiar Obrajes - La Paz</h3>
+            <p class="resumen-proyecto-3d">Un edificio elegante y moderno, ofrece un diseño contemporáneo, ambientes
+              cómodos y excelentes accesos, combinando estilo y practicidad.</p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL6.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Edificio residencial en obrajes</figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Obrajes, Calle 8 - La Paz</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- proyecto 7 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Edificio Residencial Irpavi - La Paz</h3>
+            <p class="resumen-proyecto-3d">Un edificio moderno de 5 pisos con terraza, de líneas contemporáneas y
+              acabados
+              actuales, que ofrece departamentos luminosos.</p>
+          </header>
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL7.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Edificio familiar en Irpavi</figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Irpavi, Zona Sur - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- PROYECTO 8 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="residencial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Vivienda Familiar Alto Lima - El Alto</h3>
+            <p class="resumen-proyecto-3d">Una vivienda de dos pisos moderna y elegante, con fachada estilizada,
+              interiores luminosos y espacios bien distribuidos, ofreciendo comodidad.</p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/RESIDENCIAL8.mp4" type="video/mp4" />
+            </video>
+            <figcaption>Texto explicando lo que se ve en el video.</figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Alto Lima, Calle 10 - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto residencial familiar</li>
+              <li><strong>Alcance:</strong> Diseño arquitectónico, modelado 3D y
+                recorrido virtual</li>
+            </ul>
+          </section>
+        </article>
+        <!-- COMERCIALESSSS -->
+        <!-- proyecto 1 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL1.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL1.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- proyecto 2 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL2.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL2.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Proyecto 3 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL3.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL3.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- Proyecto 4 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL4.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL4.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- PROYECTO 5 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL5.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL5.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- PROYECTO 6 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL6.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL6.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- PROYECTO 7 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL7.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL7.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+        <!-- proyecto 8 -->
+        <article class="tarjeta-proyecto-3d" data-tipo-proyecto="comercial">
+          <header>
+            <h3 class="titulo-proyecto-3d">Centro Comercial Ciudad Satélite</h3>
+            <p class="resumen-proyecto-3d">
+              Propuesta de centro comercial moderno con patios de comida,
+              tiendas ancla y circulación eficiente.
+            </p>
+          </header>
+
+          <figure class="contenedor-video-proyecto">
+            <video class="video-proyecto" controls preload="metadata" playsinline
+              poster="imagenes_proyecto/MINIATURAVIDEO.png">
+              <source src="videos_proyecto/COMERCIAL8.mp4" type="video/mp4" />
+              Tu navegador no soporta video HTML5. Puedes descargar el recorrido
+              <a href="videos_proyecto/COMERCIAL8.mp4">aquí</a>.
+            </video>
+            <figcaption>
+              Animación 3D del centro comercial, mostrando fachadas, accesos
+              principales y áreas interiores.
+            </figcaption>
+          </figure>
+
+          <section class="datos-proyecto-3d" aria-label="Datos del proyecto centro comercial">
+            <ul class="lista-datos-proyecto">
+              <li><strong>Ubicación:</strong> Ciudad Satélite - El Alto</li>
+              <li><strong>Tipo:</strong> Proyecto comercial</li>
+              <li>
+                <strong>Alcance:</strong> Maqueta 3D, recorrido exterior e
+                interior
+              </li>
+            </ul>
+          </section>
+        </article>
+      </section>
+
+      <!-- LLAMADO A LA ACCIÓN -->
+      <aside class="llamado-accion-proyectos">
+        <h2>¿Quieres ver tu proyecto en 3D?</h2>
+        <p>
+          Podemos crear una maqueta digital y un recorrido virtual de tu casa,
+          edificio o negocio antes de iniciar la construcción.
+        </p>
+        <a href="contacto.html" class="boton-contacto-proyectos">Solicitar cotización 3D</a>
+      </aside>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-sitio">
+      <div class="contenedor-pie">
+        <p>&copy; 2025 MEGA CONSTRUCCIONES. Todos los derechos reservados.</p>
+        <p>
+          Zona Ciudad Satélite - La Paz - Bolivia | Tel: +591 60129390 | Correo:
+          megaconstrucciones73@gmail.com
+        </p>
+      </div>
+    </footer>
+</body>
+<script src="seccion_proyectos.js"></script>
+<script src="proyecto.js"></script>
+</html>
