@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       botonesFiltro.forEach((boton) => {
         boton.addEventListener("click", () => {
-          const tipoSeleccionado = boton.dataset.tipo; // 'todos', 'residencial' o 'comercial'
+          const tipoSeleccionado = boton.dataset.tipo;
 
           // Marcar botón activo (opcional para estilos)
           botonesFiltro.forEach((b) => b.classList.remove("boton-filtro-activo"));
