@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (btnCotizacion && tituloInicio && parrafoInicio) {
     btnCotizacion.addEventListener("click", () => {
-      tituloInicio.textContent = "¡Gracias por tu interés en una cotización!";
+      tituloInicio.textContent = "Gracias por tu interés en una cotización.";
       parrafoInicio.textContent =
         "Nuestro equipo te contactará pronto para ayudarte con tu proyecto.";
     });
@@ -29,49 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Tu solicitud ha sido enviada. Te contactaremos pronto.");
     });
   }
-
-  // Formulario de contacto (otra página)
-  const btnContacto = document.getElementById("btn-contacto");
-  const campoNombre = document.getElementById("nombre");
-  const campoCorreo = document.getElementById("correo");
-  const campoCelular = document.getElementById("celular");
-  const campoMensaje = document.getElementById("mensaje");
-
-  if (
-    btnContacto &&
-    campoNombre &&
-    campoCorreo &&
-    campoCelular &&
-    campoMensaje
-  ) {
-    btnContacto.addEventListener("click", function () {
-      let error = false;
-
-      [campoNombre, campoCorreo, campoCelular, campoMensaje].forEach(
-        (campo) => {
-          if (campo.value.trim() === "") {
-            campo.style.backgroundColor = "#f8d7da";
-            error = true;
-          } else {
-            campo.style.backgroundColor = "";
-          }
-        }
-      );
-
-      if (error) {
-        alert("Por favor, llena todos los campos.");
-        return;
-      }
-
-      alert("Tu mensaje fue enviado correctamente. Gracias por comunicarte.");
-
-      campoNombre.value = "";
-      campoCorreo.value = "";
-      campoCelular.value = "";
-      campoMensaje.value = "";
-    });
-  }
-
   // Filtro de proyectos 3D (página proyectos)
   const botonesFiltro = document.querySelectorAll(".boton-filtro-proyecto");
   const tarjetasProyectos = document.querySelectorAll(".tarjeta-proyecto-3d");
@@ -167,10 +124,10 @@ document.addEventListener("DOMContentLoaded", () => {
       // quitar activa de todas las imágenes
       allSlides.forEach((img) => img.classList.remove("activa"));
 
-      // activar solo la actual
+      // activa solo la actual
       slidesFiltrados[currentIndex].classList.add("activa");
 
-      // actualizar puntitos
+      // actualizar los puntitos del carrusel
       const dots = paginator.querySelectorAll("button");
       dots.forEach((dot) => dot.classList.remove("activo"));
       if (dots[currentIndex]) dots[currentIndex].classList.add("activo");
@@ -224,4 +181,65 @@ document.addEventListener("DOMContentLoaded", () => {
     // iniciar en "exterior"
     aplicarFiltroGaleria(currentCategory);
   }
+});
+  //JS PARA FILTRAR PROYECTOS POR TIPO 
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const botonesFiltro = document.querySelectorAll(".boton-filtro-proyecto");
+      const tarjetasProyectos = document.querySelectorAll(".tarjeta-proyecto-3d");
+
+      botonesFiltro.forEach((boton) => {
+        boton.addEventListener("click", () => {
+          const tipoSeleccionado = boton.dataset.tipo; // 'todos', 'residencial' o 'comercial'
+
+          // Marcar botón activo (opcional para estilos)
+          botonesFiltro.forEach((b) => b.classList.remove("boton-filtro-activo"));
+          boton.classList.add("boton-filtro-activo");
+
+          // Mostrar / ocultar tarjetas según el filtro
+          tarjetasProyectos.forEach((tarjeta) => {
+            const tipoTarjeta = tarjeta.dataset.tipoProyecto; // viene de data-tipo-proyecto
+
+            if (tipoSeleccionado === "todos" || tipoTarjeta === tipoSeleccionado) {
+              tarjeta.style.display = ""; // muestra
+            } else {
+              tarjeta.style.display = "none"; // oculta
+            }
+          });
+        });
+      });
+    });
+    //SECCION CONTACTO
+    // Ejecutar cuando el HTML esté cargado
+document.addEventListener("DOMContentLoaded", () => {
+
+  const formularioContacto = document.getElementById("formulario-contacto");
+
+  if (formularioContacto) {
+    formularioContacto.addEventListener("submit", function (e) {
+      e.preventDefault(); // evita el envío real
+
+      // Obtener valores
+      const nombre  = document.getElementById("nombre").value.trim();
+      const correo  = document.getElementById("correo").value.trim();
+      const celular = document.getElementById("celular").value.trim();
+      const mensaje = document.getElementById("mensaje").value.trim();
+
+      // Validación muy básica
+      if (!nombre || !correo || !celular || !mensaje) {
+        alert("Por favor completa todos los campos antes de enviar.");
+        return;
+      }
+
+      // “Simulación” de envío
+      alert(
+        "Gracias por contactarte con MEGA CONSTRUCCIONES\n\n" +
+        "Hemos recibido tu mensaje y te responderemos a la brevedad."
+      );
+
+      // Limpiar el formulario
+      this.reset();
+    });
+  }
+
 });
