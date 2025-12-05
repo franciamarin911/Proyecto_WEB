@@ -229,6 +229,7 @@ a:hover {
   transform: translateY(-6px) rotate(-45deg);
 }
 
+
 /* Introducción proyectos (otra página) */
 .seccion-introduccion-proyectos {
   margin-top: 2rem;
@@ -712,6 +713,39 @@ body>aside h3 {
   font-size: 0.95rem;
   font-family: "Poppins", system-ui, sans-serif;
   color: var(--blanco);
+}
+.aside-anuncios {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: #0f172a;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+.aside-anuncios h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #facc15; 
+  text-align: center;
+}
+
+.anuncios-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.anuncios-grid img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: transform 0.2s ease;
+}
+
+.anuncios-grid img:hover {
+  transform: scale(1.03);
 }
 
 /* Sección inicio */
